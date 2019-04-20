@@ -28,3 +28,9 @@ The generated passwords are deliberately only alphanumeric and don't contain any
 A wrapper for the `dig` command. To run it, enter `dig` followed by the domain (or IP address) you want to query (e.g. `dig datarequests.org`). The DNS records for your query will be shown to you. You can copy the value of any line.
 
 To query a specific record type, add it after the domain (e.g. `dig bn.al mx`).
+
+### Temporary Firefox instance
+
+A quick way to launch a Firefox instance with a temporary profile. Useful for testing things in a clean profile. Run using `fx`.
+
+Inspired by this [Hacker News post](https://news.ycombinator.com/item?id=18898865) by callahad.
