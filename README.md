@@ -20,3 +20,11 @@ A very simple password generator. To run it, just enter `pw` followed by the len
 If no length is given, a 25 character password will be generated.
 
 The generated passwords are deliberately only alphanumeric and don't contain any special characters.
+
+### DNS lookup
+
+![Looking up DNS records](https://cdn.baltpeter.io/img/albert-dig-demo.gif)
+
+A wrapper for the `dig` command. To run it, enter `dig` followed by the domain (or IP address) you want to query (e.g. `dig datarequests.org`). The DNS records for your query will be shown to you. You can copy the value of any line.
+
+To query a specific record type, add it after the domain (e.g. `dig bn.al mx`).
