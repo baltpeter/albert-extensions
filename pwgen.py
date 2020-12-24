@@ -2,16 +2,14 @@
 
 """Generate passwords of a specified length."""
 
-from albertv0 import *
+from albert import *
 import string
 import secrets
 
-__iid__ = "PythonInterface/v0.1"
-__prettyname__ = "Password generator"
-__version__ = "1.0.0"
-__trigger__ = "pw"
-__author__ = "Benjamin Altpeter"
-__dependencies__ = []
+__title__ = "Password generator"
+__version__ = "0.4.1"
+__triggers__ = "pw"
+__authors__ = "Benjamin Altpeter"
 
 iconPath = iconLookup("password")
 
@@ -31,7 +29,7 @@ def handleQuery(query):
 
 	results.append(
 		Item(
-			id=__prettyname__,
+			id=__title__,
 	        icon=iconPath,
 	        text=pw,
 	        subtext="Your generated password of length " + str(length),

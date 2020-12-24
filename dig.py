@@ -2,16 +2,14 @@
 
 """Issue DNS requests through Albert."""
 
-from albertv0 import *
+from albert import *
 import subprocess
 import ipaddress
 
-__iid__ = "PythonInterface/v0.1"
-__prettyname__ = "Dig"
-__version__ = "1.0.0"
-__trigger__ = "dig"
-__author__ = "Benjamin Altpeter"
-__dependencies__ = []
+__title__ = "Dig"
+__version__ = "0.4.1"
+__triggers__ = "dig"
+__authors__ = "Benjamin Altpeter"
 
 defaultIcon = iconLookup("network-server")
 
@@ -38,7 +36,7 @@ def handleQuery(query):
 
                     results.append(
                         Item(
-                            id=__prettyname__,
+                            id=__title__,
                             icon=defaultIcon,
                             text=value + " :: " + line[2],
                             subtext=line[0] + " :: TTL = " + line[1],
@@ -53,7 +51,7 @@ def handleQuery(query):
     else:
         results.append(
             Item(
-                id=__prettyname__,
+                id=__title__,
                 icon=defaultIcon,
                 text="Enter your query to lookup DNS records.",
                 subtext="First argument is the domain or IP, (optional) second argument is the record type.",

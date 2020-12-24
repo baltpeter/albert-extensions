@@ -2,15 +2,13 @@
 
 """Quickly open Flameshot to make a screenshot."""
 
-from albertv0 import *
+from albert import *
 import os
 
-__iid__ = "PythonInterface/v0.1"
-__prettyname__ = "Flameshot shortcut"
-__version__ = "1.0.0"
-__trigger__ = "fs"
-__author__ = "Benjamin Altpeter"
-__dependencies__ = []
+__title__ = "Flameshot shortcut"
+__version__ = "0.4.1"
+__triggers__ = "fs"
+__authors__ = "Benjamin Altpeter"
 
 iconPath = iconLookup("flameshot")
 
@@ -22,7 +20,7 @@ def handleQuery(query):
 
     results.append(
         Item(
-            id=__prettyname__,
+            id=__title__,
             icon=iconPath,
             text="Open Flameshot in GUI mode",
             subtext="This will run `flameshot gui`.",

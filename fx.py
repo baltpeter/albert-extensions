@@ -2,15 +2,13 @@
 
 """Quickly lanuch a temporary Firefox instance."""
 
-from albertv0 import *
+from albert import *
 import os
 
-__iid__ = "PythonInterface/v0.1"
-__prettyname__ = "Firefox temporary profile"
-__version__ = "1.0.0"
-__trigger__ = "fx"
-__author__ = "Benjamin Altpeter"
-__dependencies__ = []
+__title__ = "Firefox temporary profile"
+__version__ = "0.4.1"
+__triggers__ = "fx"
+__authors__ = "Benjamin Altpeter"
 
 iconPath = iconLookup("firefox")
 
@@ -22,7 +20,7 @@ def handleQuery(query):
 
     results.append(
         Item(
-            id=__prettyname__,
+            id=__title__,
             icon=iconPath,
             text="Launch temporary Firefox profile",
             subtext="This will create a new temporary Firefox profile and launch an instance with it.",
